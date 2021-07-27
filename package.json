@@ -1,0 +1,29 @@
+{
+  "name": "dodo-example",
+  "version": "1.0.0",
+  "description": "Provide code examples for developers. Help developers quickly build Defi products with DODO",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.1",
+    "web3": "1.2.11"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DODOEX/dodo-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DODOEX/dodo-example/issues"
+  },
+  "homepage": "https://github.com/DODOEX/dodo-example#readme"
+}
