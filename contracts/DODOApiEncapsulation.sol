@@ -24,7 +24,7 @@ contract DODOApiEncapsulation {
         address toToken,
         uint256 fromAmount,
         address dodoApprove, // targetApproveAddr
-        address dodoProxy, // to
+        address dodoProxy, // to (DODOV2Proxy or DODORouteProxy，should not be fixed)
         bytes memory dodoApiData // data
     )
         external

@@ -100,6 +100,7 @@ contract DODOProxyIntegrate {
             - BSC: 0x0F859706AeE7FcF61D5A8939E8CB9dBB6c1EDA33
             - Polygon: 0xDfaf9584F5d229A9DBE5978523317820A8897C5A
             - HECO: 0xA0Bb1FbC23a547a8D448C7c8a2336F69A9dBa1AF
+            - Arbitrum: 0xA5F36E822540eFD11FcD77ec46626b916B217c3e
         */
 
         address dodoV1Helper = 0x0F859706AeE7FcF61D5A8939E8CB9dBB6c1EDA33; //BSC Helper
@@ -129,15 +130,17 @@ contract DODOProxyIntegrate {
             BSC DODOApprove: 0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1
             Polygon DODOApprove: 0x6D310348d5c12009854DFCf72e0DF9027e8cb4f4
             Heco DODOApprove: 0x68b6c06Ac8Aa359868393724d25D871921E97293
+            Arbitrum DODOApprove: 0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8
         */
         address dodoApprove = 0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1;
         _generalApproveMax(fromToken, dodoApprove, fromTokenAmount);
 
         /*
-            ETH DODOProxy: 0xa356867fDCEa8e71AEaF87805808803806231FdC
-            BSC DODOProxy: 0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486
-            Polygon DODOProxy: 0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70
-            Heco DODOProxy: 0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7
+            ETH DODOV2Proxy: 0xa356867fDCEa8e71AEaF87805808803806231FdC
+            BSC DODOV2Proxy: 0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486
+            Polygon DODOV2Proxy: 0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70
+            Heco DODOV2Proxy: 0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7
+            Arbitrum DODOV2Proxy: 0x88CBf433471A0CD8240D2a12354362988b4593E5
         */
         address dodoProxy = 0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486;
  
@@ -206,15 +209,17 @@ contract DODOProxyIntegrate {
             BSC DODOApprove: 0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1
             Polygon DODOApprove: 0x6D310348d5c12009854DFCf72e0DF9027e8cb4f4
             Heco DODOApprove: 0x68b6c06Ac8Aa359868393724d25D871921E97293
+            Arbitrum DODOApprove: 0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8
         */
         address dodoApprove = 0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1;
         _generalApproveMax(fromToken, dodoApprove, fromTokenAmount);
 
         /*
-            ETH DODOProxy: 0xa356867fDCEa8e71AEaF87805808803806231FdC
-            BSC DODOProxy: 0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486
-            Polygon DODOProxy: 0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70
-            Heco DODOProxy: 0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7
+            ETH DODOV2Proxy: 0xa356867fDCEa8e71AEaF87805808803806231FdC
+            BSC DODOV2Proxy: 0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486
+            Polygon DODOV2Proxy: 0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70
+            Heco DODOV2Proxy: 0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7
+            Arbitrum DODOV2Proxy: 0x88CBf433471A0CD8240D2a12354362988b4593E5
         */
         address dodoProxy = 0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486;
  
