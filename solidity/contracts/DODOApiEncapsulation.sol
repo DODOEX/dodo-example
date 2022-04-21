@@ -37,6 +37,8 @@ contract DODOApiEncapsulation {
             require(fromAmount == msg.value);
         }
 
+        //Notice: need to add dodoProxy to the whitelist.
+        // require(isWhiteListed[dodoProxy], "DODOApiEncapsulation: Not Whitelist Contract");
         (bool success, ) = dodoProxy.call{value: fromToken == _ETH_ADDRESS_ ? fromAmount : 0}(dodoApiData);
         require(success, "API_SWAP_FAILED");
 
