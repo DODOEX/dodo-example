@@ -3,6 +3,7 @@ const { ethers } = require("ethers");
 const erc20ABI = require("./erc20.json");
 
 const privateKey = env.YOUR_PK;
+const apiKey = env.YOUR_API_KEY;
 // please remember keep your wallet private key safe and split it from source code repo in your project
 // this is just for demo usage.
 const rpcUrl = "https://bsc-dataseed.binance.org";
@@ -11,7 +12,7 @@ const rpcProvider = new ethers.providers.JsonRpcProvider(rpcUrl);
 
 const wallet = new ethers.Wallet(privateKey, rpcProvider);
 
-const dodoAPI = "https://route-api.dodoex.io/dodoapi/getdodoroute";
+const dodoAPI = "https://api.dodoex.io/route-service/developer/getdodoroute";
 
 const checkAllowance = async (
   tokenAddress,
@@ -78,6 +79,7 @@ const testFlight = () => {
         // BSC chain id is 56
         chainId: 56,
         rpc: rpcUrl,
+        apikey: apiKey,
       },
     })
     .then(async function (response) {
