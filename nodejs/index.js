@@ -108,7 +108,7 @@ const testFlight = () => {
         const gasLimit = await wallet.estimateGas({
           to: routeObj.to,
           data: routeObj.data,
-          value: 0, // if fromToken is eth or bnb or ht, value should be fromAmount
+          value: routeObj.value, // if native token, value is fromAmount, if erc20 token, value is 0
         });
         console.log("gasLimit => ", gasLimit);
 
@@ -121,7 +121,7 @@ const testFlight = () => {
         const tx = {
           from: wallet.address,
           to: routeObj.to,
-          value: 0, // if fromToken is eth or bnb or ht, value should be fromAmount
+          value: routeObj.value, // if native token, value is fromAmount, if erc20 token, value is 0
           nonce: nonce,
           gasLimit: ethers.utils.hexlify(gasLimit),
           gasPrice: ethers.utils.hexlify(gasPrice),
