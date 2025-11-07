@@ -2,8 +2,8 @@ const axios = require("axios").default;
 const { ethers } = require("ethers");
 const erc20ABI = require("./erc20.json");
 
-const privateKey = env.YOUR_PK;
-const apiKey = env.YOUR_API_KEY;
+const privateKey = process.env.YOUR_PK;
+const apiKey = process.env.YOUR_API_KEY;
 // please remember keep your wallet private key safe and split it from source code repo in your project
 // this is just for demo usage.
 const rpcUrl = "https://bsc-dataseed.binance.org";
