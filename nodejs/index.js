@@ -2,6 +2,7 @@ const axios = require("axios").default;
 const { ethers } = require("ethers");
 const erc20ABI = require("./erc20.json");
 
+// please set your environment variable wallet private key "YOUR_PK" and the dodo developer platform(https://developer.dodoex.io/) API key "YOUR_API_KEY".
 const privateKey = process.env.YOUR_PK;
 const apiKey = process.env.YOUR_API_KEY;
 // please remember keep your wallet private key safe and split it from source code repo in your project
